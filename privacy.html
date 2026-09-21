@@ -14,7 +14,7 @@
 <header>
   <div class="app">Say Your Name: Pronounce It</div>
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated 20 September 2026</p>
+  <p class="muted">Last updated 21 September 2026</p>
   <nav>
     <a href="index.html">Home</a>
     <a href="support.html">Support</a>
@@ -36,7 +36,12 @@
 <h2>Permissions the app asks for</h2>
 
 <h3>Microphone</h3>
-<p>Used only while you are actively recording a pronunciation. The audio is written to a file on your device and nothing else happens to it. No speech recognition is performed, and no audio is sent off the device.</p>
+<p>Used only while you are actively recording a pronunciation. The audio is written to a file on your device, and no audio is sent off the device.</p>
+
+<h3>Speech recognition</h3>
+<p>Optional, and off until you turn it on. When it is on, the app reads back the clip you just recorded so it can fill in the spelling of the name for you, instead of making you type it.</p>
+<p>The app sets Apple's <code>requiresOnDeviceRecognition</code> flag, which requires the recognition to run entirely on your iPhone. On a device that cannot recognise speech locally, the app produces no suggestion at all rather than falling back to a server.</p>
+<p>When you grant this permission, iOS shows its own standard alert saying that speech data will be sent to Apple. That sentence is the same in every app and is written before an app declares how it will recognise speech. It does not describe this app: no audio and no transcript leaves your iPhone, and nothing is stored anywhere except the name you keep.</p>
 
 <h3>Camera</h3>
 <p>Used only when you choose to take a photo, or when you open the QR scanner to import a profile someone is showing you. Photos are saved to the app's local storage. Scanning happens entirely on-device.</p>
